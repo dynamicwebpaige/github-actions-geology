@@ -1,5 +1,6 @@
 import pandas as pd
 
+# Utility function to scrape space weather data.
 def scrape_space_weather(url):
   df =  pd.read_json(url)
   return re.sub(r"\[?\s*(\d+)(?=(?:, \d+)|\])(?=[^\[]*\]).", "", df.to_csv(index=False))
