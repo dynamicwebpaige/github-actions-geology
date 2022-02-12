@@ -1,4 +1,5 @@
 import pandas as pd
+import re
 
 # Utility function to scrape space weather data.
 def scrape_space_weather(url):
